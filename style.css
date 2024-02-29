@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding-top: 80px;
+}
+
+p{
+    color: #A3A5AE;
+}
+
+/* container */
+.container{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* top */
+.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.top main{
+    max-width: 50%;
+    text-align: center;
+}
+
+.top main h1{
+    font-weight: 200;
+    color: #4C4E61;
+}
+
+.top main h2{
+    font-size: 2em;
+    color: #4C4E61;
+    margin-bottom: 1rem;
+}
+
+/* bottom */
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* colunas */
+.coluna{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna-1{
+    align-items: end;
+}
+
+.coluna-3{
+    align-items: start;
+}
+
+/* sections */
+section{
+    max-width: 350px;
+    min-height: 250px;
+    box-shadow: -10px 0 15px #A3A5AE1E, 10px 0 15px #A3A5AE1E, 0 10px 15px #A3A5AE1E;
+    padding: 1.8rem;
+    border-radius: 8px;
+}
+
+section h1{
+    font-size: 20px;
+}
+
+section p{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.team-builder{
+    margin-bottom: 30px;
+    border-top: 4px solid #EA5353;
+}
+
+.karma{
+    border-top: 4px solid #FCAF4A;
+}
+
+.supervisor{
+    margin-right: 15px;
+    border-top: 4px solid #45D3D3;
+}
+
+.calculator{
+    margin-left: 15px;
+    border-top: 4px solid #549EF2;
+}
+
+/* section img */
+.img-container{
+    position: relative;
+    bottom: -2rem;
+}
+
+.img-container img{
+    position: absolute;
+    right: 1px;
+}
+
+@media (max-width: 768px){
+    .top main{
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+
+    /* section img*/
+    .img-container-3{
+        position: relative;
+        bottom: 0;
+    }
+
+    /* colunas */
+    .coluna-1, .coluna-3{
+        align-items: center;
+    }
+
+    .supervisor{
+        margin-right: 0;
+    }
+
+    .calculator{
+        margin-left: 0;
+    }
+
+    .supervisor, .karma{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 375px){
+    .top main{
+        max-width: 100%;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .top main h1{
+        font-size: 1.5em;
+    }
+    
+    .top main h2{
+        font-size: 1.5em;
+    }
+
+    .top main p{
+        font-size: 14px;
+    }
+
+    /* section img */
+    .img-container-3{
+        position: relative;
+        bottom: -2.5rem;
+    }
+}
