@@ -117,7 +117,7 @@ section p{
     right: 1px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 780px){
     .top main{
         max-width: 80%;
         text-align: center;
